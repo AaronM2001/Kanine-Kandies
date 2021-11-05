@@ -1,0 +1,9 @@
+body{
+background: url(images/dog.jfif);
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
