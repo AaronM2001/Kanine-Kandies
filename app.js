@@ -1,4 +1,9 @@
-
+var ageCheck =window.prompt("Please enter your age?");
+if (ageCheck<18){
+    location.replace("age.html");
+}else {
+    alert("Welcome to the page!")
+}
 function calculateDeg(){
     var humanyears = document.getElementById("human").value;
     var dogyears = humanyears * 7;
@@ -23,14 +28,14 @@ function calculateDeg(){
 // };
 const today= new Date();
 console.log(today);
-const dayNumber= today.getDate();
+const dayNumber= today.getDay();
 console.log(dayNumber);
 // storing my output location
 const element =document.getElementById("message1")
 function special() {
-    if(dayNumber== 1){
+    if(dayNumber==1){
         return "1/2 off all oils"
-    } else if (dayNumber===2){
+} else if (dayNumber==2){
 return "2-for-1 treats"
 }else if (dayNumber ==3){
     return"Buy-one-Get-one Free day"
@@ -44,7 +49,7 @@ return "2-for-1 treats"
     return"Brunch and free samples"
 } else (element.classList.add("hideme"))
 }
-console.log('you got a' + special ());
+console.log('you got a' + special());
 element.innerHTML='Check out The Specital Today!' + '</br>' + special();
 
 function assignGrade(score){
