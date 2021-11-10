@@ -1,8 +1,10 @@
+var name =window.prompt("Please enter your name?")
 var ageCheck =window.prompt("Please enter your age?");
 if (ageCheck<18){
+    window.alert("You have submited that you are " + ageCheck + " Years old " + name + "." )
     location.replace("age.html");
 }else {
-    alert("Welcome to the page!")
+    alert("Welcome to the page " + name + "!")
 }
 function calculateDeg(){
     var humanyears = document.getElementById("human").value;
