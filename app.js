@@ -117,12 +117,14 @@ console.log("You gat a " + assignGrade(68) );
 console.log("You gat a " + assignGrade(58) );
 
 const arrayCarousel=[
-    "one.png"
+    "https://dogsbestlife.com/wp-content/uploads/2020/11/pet-CBD-benefits-graphic-scaled.jpeg",
+    "https://bloximages.newyork1.vip.townnews.com/greensboro.com/content/tncms/assets/v3/editorial/f/31/f31000fe-4c15-11ea-ace7-77f80db461c9/5e416fe6124cf.image.jpg?resize=1024%2C686"
 ]
 counter=0
 function setImage() {
     document.getElementById("carousel-image").src=arrayCarousel[counter];
-    document.getElementById("carousel-image1").src=arrayCarousel[counter];
+    // document.getElementById("carousel-image1").src=arrayCarousel[counter];
     counter = (counter+1) % arrayCarousel.length;
 }
+setInterval(setImage,5000); 
 
