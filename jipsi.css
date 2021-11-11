@@ -1,0 +1,41 @@
+body {
+    background-image: url(https://media.giphy.com/media/dw2yCF4MhcNmSMgpfe/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+button {
+    font-size: 40px;
+    background-color: transparent;
+    border: 5px solid aqua;
+    color: black;
+    margin-left: 600px;
+    font-family: 'Romanesco', cursive;
+}
+h2#btn {
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 300px;
+}
+h1,
+h2 {
+    color: #eeee;
+    font-family: 'Romanesco', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+#container
+{
+  border: 2px dotted white;
+  background-color:orchid;
+  margin: 20px;
+  padding: 10px;
+}
+
+#fortune
+{
+  border: 2px solid white;
+  background-color: darkslateblue;
+  padding: 20px;
+}
