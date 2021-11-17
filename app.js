@@ -97,24 +97,24 @@ return "2-for-1 treats"
 console.log('you got a' + special());
 element.innerHTML='Check out The Specital Today!' + '</br>' + special();
 
-function assignGrade(score){
-    if(score > 90){
-        return "A";
-    }else if (score > 80 && score<90){
-        return "B"
-    } else if(score > 70 && score<80){
-        return "C";
-    }else if (score>60 && score<70){
-        return "D"
-    }else{
-        return "F"
-    }
-}
-console.log("You gat a " + assignGrade(95) );
-console.log("You gat a " + assignGrade(85) );
-console.log("You gat a " + assignGrade(78) );
-console.log("You gat a " + assignGrade(68) );
-console.log("You gat a " + assignGrade(58) );
+// function assignGrade(score){
+//     if(score > 90){
+//         return "A";
+//     }else if (score > 80 && score<90){
+//         return "B"
+//     } else if(score > 70 && score<80){
+//         return "C";
+//     }else if (score>60 && score<70){
+//         return "D"
+//     }else{
+//         return "F"
+//     }
+// }
+// console.log("You gat a " + assignGrade(95) );
+// console.log("You gat a " + assignGrade(85) );
+// console.log("You gat a " + assignGrade(78) );
+// console.log("You gat a " + assignGrade(68) );
+// console.log("You gat a " + assignGrade(58) );
 
 const arrayCarousel=[
     "https://dogsbestlife.com/wp-content/uploads/2020/11/pet-CBD-benefits-graphic-scaled.jpeg",
@@ -128,3 +128,87 @@ function setImage() {
 }
 setInterval(setImage,5000); 
 
+// var choices = ['red', 'orange', 'pink', 'yellow'];
+// for (var i = 0; i < choices.length; i++) {
+//     console.log('My #' + (i + 1) + ' choice is ' + choices[i]);
+// }
+// for (var i = 0; i < choices.length; i++) {
+//     var choiceNum = i + 1;
+//     var choiceNumSuffix;
+//     if (choiceNum == 1) {
+//         choiceNumSuffix = 'st';
+//     } else if (choiceNum == 2) {
+//         choiceNumSuffix = 'nd';
+//     } else if (choiceNum == 3) {
+//         choiceNumSuffix = 'rd';
+//     } else {
+//         choiceNumSuffix = 'th';
+//     }
+//     console.log('My ' + choiceNum + choiceNumSuffix + ' choice is ' + choices[i]);
+// }
+var sibling={
+    name:"Tony",
+    gender:"male",
+    age:23,
+    single:false,
+    children:false,
+    older:"older"
+};
+// var sibling=new Object();
+// sibling.name="Tony";
+// sibling.age=23;
+// sibling.children=false;
+// sibling.older="older";
+sibling.single=true;
+sibling.gender="male";
+var meeting=("Hello my mame is"+ sibling.name + " i am" + sibling.age);
+console.log(meeting);
+// document.getElementById("demo").innerHTML=sibling.name
+sibling.single=true;
+
+// var favrecipe="ch"
+// const recipe={
+//     title:"Mole",
+//     serving: 2,
+// ingredience:["cumin","cinnomin","coca"]
+// };
+// console.log($(recipe.title));
+// console.log("Serving:" +recipe.serving);
+// for(var  i=0;i<recipe.ingredience.length; i++)
+// console.log($(recipe.ingredience[i]));
+// document.getElementById(title).innerHTML="Title"+ recipe.title;
+// document.getElementById(servingsize).innerHTML="servingsize"+ recipe.serving;
+
+var books = [
+    {
+     title: 'Chaos Monkeys',
+     author: 'Antonio Garcia Martinez',
+     alreadyRead: true
+    },
+    {
+      title: 'Disrupted',
+      author: 'Dan Lyons',
+      alreadyRead: true
+    },
+    {
+      title: 'A Brief History of Time',
+      author: 'Stephen Hawking',
+      alreadyRead: false
+    },
+    {
+      title: 'All the Presidents Men',
+      author: 'Bob Woodward',
+      alreadyRead: false
+    }
+    ];
+  
+  for (var i = 0; i < books.length;  i++) {
+    var book = books[i];
+    var bookInfo = book.title + " by " + book.author;
+    if(book.alreadyRead) {
+      console.log('You already read ' + bookInfo);
+    } else {
+      console.log('You still need to read ' + bookInfo);
+    }
+    
+  }
