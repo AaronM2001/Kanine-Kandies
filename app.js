@@ -1,17 +1,17 @@
-var name =window.prompt("Please enter your name?")
-var ageCheck =window.prompt("Please enter your age?");
-if (ageCheck<18){
-    window.alert("You have submited that you are " + ageCheck + " Years old " + name + "." )
+var name = window.prompt("Please enter your name?")
+var ageCheck = window.prompt("Please enter your age?");
+if (ageCheck < 18) {
+    window.alert("You have submited that you are " + ageCheck + " Years old " + name + ".")
     location.replace("age.html");
-}else {
+} else {
     alert("Welcome to the page " + name + "!")
 }
-function calculateDeg(){
+function calculateDeg() {
     var humanyears = document.getElementById("human").value;
     var dogyears = humanyears * 7;
     console.log("Your dog is  " + dogyears + "in human years")
-    document.getElementById("celDeg").innerHTML=dogyears;
-  }
+    document.getElementById("celDeg").innerHTML = dogyears;
+}
 //   calculateDeg();
 // //   ///arry literal
 // //   ///we asighn the arry to a varibal 
@@ -59,7 +59,7 @@ function calculateDeg(){
 // // for(var i=0; i<=20; i++){
 // //     if(i % 2 === 0){
 // //         console.log(i + "is even")
-    
+
 // // }else{
 // //     console.log(i+ "is odd")
 // // }
@@ -71,31 +71,31 @@ function calculateDeg(){
 //  }
 // else { console.log("uh-oh!")
 // };
-const today= new Date();
+const today = new Date();
 console.log(today);
-const dayNumber= today.getDay();
+const dayNumber = today.getDay();
 console.log(dayNumber);
 // storing my output location
-const element =document.getElementById("message1")
+const element = document.getElementById("message1")
 function special() {
-    if(dayNumber==1){
+    if (dayNumber == 1) {
         return "1/2 off all oils"
-} else if (dayNumber==2){
-return "2-for-1 treats"
-}else if (dayNumber ==3){
-    return"Buy-one-Get-one Free day"
-}else if ( dayNumber==4){
-    return"Add a gummy"
-} else if (dayNumber==5){
-    return"Bring a friend get a extra treat"
-} else if (dayNumber==6){
-    return"Buy two edibles get one free"
-}else if(dayNumber==7){
-    return"Brunch and free samples"
-} else (element.classList.add("hideme"))
+    } else if (dayNumber == 2) {
+        return "2-for-1 treats"
+    } else if (dayNumber == 3) {
+        return "Buy-one-Get-one Free day"
+    } else if (dayNumber == 4) {
+        return "Add a gummy"
+    } else if (dayNumber == 5) {
+        return "Bring a friend get a extra treat"
+    } else if (dayNumber == 6) {
+        return "Buy two edibles get one free"
+    } else if (dayNumber == 7) {
+        return "Brunch and free samples"
+    } else (element.classList.add("hideme"))
 }
 console.log('you got a' + special());
-element.innerHTML='Check out The Specital Today!' + '</br>' + special();
+element.innerHTML = 'Check out The Specital Today!' + '</br>' + special();
 
 // function assignGrade(score){
 //     if(score > 90){
@@ -116,17 +116,17 @@ element.innerHTML='Check out The Specital Today!' + '</br>' + special();
 // console.log("You gat a " + assignGrade(68) );
 // console.log("You gat a " + assignGrade(58) );
 
-const arrayCarousel=[
+const arrayCarousel = [
     "https://dogsbestlife.com/wp-content/uploads/2020/11/pet-CBD-benefits-graphic-scaled.jpeg",
     "https://bloximages.newyork1.vip.townnews.com/greensboro.com/content/tncms/assets/v3/editorial/f/31/f31000fe-4c15-11ea-ace7-77f80db461c9/5e416fe6124cf.image.jpg?resize=1024%2C686"
 ]
-counter=0
+counter = 0
 function setImage() {
-    document.getElementById("carousel-image").src=arrayCarousel[counter];
+    document.getElementById("carousel-image").src = arrayCarousel[counter];
     // document.getElementById("carousel-image1").src=arrayCarousel[counter];
-    counter = (counter+1) % arrayCarousel.length;
+    counter = (counter + 1) % arrayCarousel.length;
 }
-setInterval(setImage,5000); 
+setInterval(setImage, 5000);
 
 // var choices = ['red', 'orange', 'pink', 'yellow'];
 // for (var i = 0; i < choices.length; i++) {
@@ -146,25 +146,25 @@ setInterval(setImage,5000);
 //     }
 //     console.log('My ' + choiceNum + choiceNumSuffix + ' choice is ' + choices[i]);
 // }
-var sibling={
-    name:"Tony",
-    gender:"male",
-    age:23,
-    single:false,
-    children:false,
-    older:"older"
+var sibling = {
+    name: "Tony",
+    gender: "male",
+    age: 23,
+    single: false,
+    children: false,
+    older: "older"
 };
 // var sibling=new Object();
 // sibling.name="Tony";
 // sibling.age=23;
 // sibling.children=false;
 // sibling.older="older";
-sibling.single=true;
-sibling.gender="male";
-var meeting=("Hello my mame is"+ sibling.name + " i am" + sibling.age);
+sibling.single = true;
+sibling.gender = "male";
+var meeting = ("Hello my mame is" + sibling.name + " i am" + sibling.age);
 console.log(meeting);
 // document.getElementById("demo").innerHTML=sibling.name
-sibling.single=true;
+sibling.single = true;
 
 // var favrecipe="ch"
 // const recipe={
@@ -181,34 +181,34 @@ sibling.single=true;
 
 var books = [
     {
-     title: 'Chaos Monkeys',
-     author: 'Antonio Garcia Martinez',
-     alreadyRead: true
+        title: 'Chaos Monkeys',
+        author: 'Antonio Garcia Martinez',
+        alreadyRead: true
     },
     {
-      title: 'Disrupted',
-      author: 'Dan Lyons',
-      alreadyRead: true
+        title: 'Disrupted',
+        author: 'Dan Lyons',
+        alreadyRead: true
     },
     {
-      title: 'A Brief History of Time',
-      author: 'Stephen Hawking',
-      alreadyRead: false
+        title: 'A Brief History of Time',
+        author: 'Stephen Hawking',
+        alreadyRead: false
     },
     {
-      title: 'All the Presidents Men',
-      author: 'Bob Woodward',
-      alreadyRead: false
+        title: 'All the Presidents Men',
+        author: 'Bob Woodward',
+        alreadyRead: false
     }
-    ];
-  
-  for (var i = 0; i < books.length;  i++) {
+];
+
+for (var i = 0; i < books.length; i++) {
     var book = books[i];
     var bookInfo = book.title + " by " + book.author;
-    if(book.alreadyRead) {
-      console.log('You already read ' + bookInfo);
+    if (book.alreadyRead) {
+        console.log('You already read ' + bookInfo);
     } else {
-      console.log('You still need to read ' + bookInfo);
+        console.log('You still need to read ' + bookInfo);
     }
-    
-  }
+
+}
